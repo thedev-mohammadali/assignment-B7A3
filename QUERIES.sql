@@ -13,14 +13,19 @@ DROP TABLE IF EXISTS Users;
 -- 1. CREATE USERS TABLE
 -- =========================================================================
 CREATE TABLE Users (
-    user_id TYPE,
-    full_name TYPE,
-    email TYPE,
-    role TYPE,
-    phone_number TYPE,
-    -- Write your constraint to make 'user_id' the Primary Key
-    -- Write your constraint to ensure 'email' values are never duplicated
-    -- Write your check constraint to restrict 'role' to specific allowed strings
+    user_id INT,
+    full_name VARCHAR(150) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    role VARCHAR(30) NOT NULL,
+    phone_number VARCHAR(30),
+    -- Constraint to make 'user_id' the Primary Key
+    PRIMARY KEY (user_id),
+    -- Constraint to ensure 'email' values are never duplicated
+    UNIQUE (email),
+    -- Check constraint to restrict 'role' to specific allowed strings
+    CONSTRAINT chk_user_role CHECK (
+        role IN ('Ticket Manager', 'Football Fan')
+    )
 );
 
 -- =========================================================================
