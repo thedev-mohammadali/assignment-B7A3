@@ -68,7 +68,7 @@ The Draw.io source file is also included in this repository.
 
 ```text
 .
-├── football-ticket-booking-system.drawio
 ├── QUERY.sql
-└── README.md
+├── README.md
+└── football-ticket-booking-system.drawio
 ```
