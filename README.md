@@ -43,6 +43,14 @@ The Draw.io source file is also included in this repository.
 
 ---
 
+## Theory Question Answers
+
+Public Video Link:
+
+https://drive.google.com/file/d/1izXdsW8dbna4EvXCICkw_u-SFTPKOgyP/view?usp=sharing
+
+---
+
 ## SQL Features Used
 
 - SELECT
